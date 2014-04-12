@@ -1,4 +1,7 @@
-argo_mvp
-========
+Argo
+====
 
-MVP of Argo. Tech proof of concept
+Proyecto realizado por:
+- Edén Hernández
+- Borja Salguero
+

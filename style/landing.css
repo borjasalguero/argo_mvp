@@ -1,0 +1,360 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 10px;
+  font-family: 'fira_sans_otlight';
+
+}
+
+.hide {
+  display: none !important;
+}
+
+/*
+  Common elements. Logo, arrow, phone...
+*/
+
+#logo {
+  position: absolute;
+  height: 4.2rem;
+  width: 15.4rem;
+  background-image: url(images/logo.png);
+  left: 5rem;
+  top: 2rem;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 200;
+}
+
+#arrow-down {
+  cursor: pointer;
+  background: white;
+  background-image: url(images/arrow.png);
+  background-size: 40%;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  margin-left: -5rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  z-index: 1;
+}
+
+#arrow-down:hover {
+  cursor: pointer;
+  background: white;
+  background-image: url(images/arrow.png);
+  background-size: 40%;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+  margin-left: -7rem;
+  height: 14rem;
+  width: 14rem;
+  border-radius: 7rem;
+  z-index: 1;
+}
+
+#arrow-up {
+  cursor: pointer;
+  position: fixed;
+  background: white;
+  z-index: 200;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  left: 50%;
+  margin-left: -5rem;
+  margin-top: -5rem;
+  background-image: url(images/arrow-up.png);
+  background-size: 40%;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+}
+
+#arrow-up:hover {
+  cursor: pointer;
+  position: fixed;
+  background: white;
+  z-index: 200;
+  height: 14rem;
+  width: 14rem;
+  border-radius: 7em;
+  left: 50%;
+  margin-left: -7rem;
+  margin-top: -7rem;
+  background-image: url(images/arrow-up.png);
+  background-size: 40%;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+}
+
+#lm-iphone {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  right: 5rem;
+}
+
+#lm-phone img {
+  height: 100%;
+}
+
+#fb-login {
+  cursor: pointer;
+  position: absolute;
+  width: 21.5rem;
+  height: 4.1rem;
+  border: none;
+  background: black;
+  background-image: url(images/fb_login.png);
+  background-size: auto 100%;
+  top: 65%;
+  left: 5rem;
+  z-index: 200;
+}
+
+#fb-login[disabled] {
+  opacity: .4;
+  pointer-events: none;
+  cursor: none;
+}
+
+
+/*
+  Main panel of landing.
+*/
+
+#background-slide {
+  background: black;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+#background-slide.panel-1 {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+#background-slide.panel-2 {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.background-slide-panel {
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#bck-slide-panel-1 {
+  background-image: url(images/students-cycling.jpg);
+  background-size: auto 120%;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+}
+
+#bck-slide-panel-2 {
+  background-image: url(images/backgroundGuitar.jpg);
+  background-size: auto 100%;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+}
+
+
+.landing-main {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  /*background: black;*/
+  height: 100%;
+  /*background-image: url(images/students-cycling.jpg);*/
+ 
+}
+
+.lm-content {
+  width: 30rem;
+  height: 10rem;
+  position: absolute;
+  top: calc(55% - 5rem);
+  left: 5rem;
+  color: white;
+}
+
+.lm-content-text {
+  margin-top: 2rem;
+  font-family: 'fira_sans_otlight';
+  font-size: 3.4rem;
+  color: white;
+}
+
+/*
+  Regular panels of info in the landing.
+*/
+
+.landing-extra-info {
+  position: relative;
+  background: #eee;
+  height: 40rem;
+  border-bottom: .1rem solid white;
+  z-index: 10;
+  padding: 2rem 5rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.lei-content {
+  width: 50rem;
+  position: absolute;
+  right: 5rem;
+  top: 7rem;
+}
+
+.lei-content-left {
+  right: 0;
+  left: 5rem;
+}
+
+.lei-header {
+  font-size: 4.4rem;
+
+}
+
+.lei-text {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+.landing-who-we-are {
+  background: #eee;
+  z-index: 10;
+  height: 30rem;
+}
+
+.member {
+  margin-top: 4rem;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.member:last-child {
+  margin-bottom: 2rem;
+}
+
+.member-picture {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 8rem;
+  background: black;
+  display: inline-block;
+  vertical-align: top;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+#eden-profile:hover {
+  background-image: url(images/eden_profile_bw.png)
+}
+
+#borja-profile:hover {
+  background-image: url(images/borja_profile_bw.png)
+}
+
+#eden-profile {
+  background-image: url(images/eden_profile.jpg)
+}
+
+#borja-profile {
+  background-image: url(images/borja_profile.jpg)
+}
+
+.member-description {
+  font-size: 2rem;
+  margin-left: 1rem;
+  width: calc(100% - 16rem);
+  display: inline-block;
+  line-height: 2.6rem;
+}
+
+.member-description strong {
+  font-family: 'fira_sans_otregular'; 
+  font-size: 2.6rem;
+  line-height: 4rem;
+}
+
+/*
+  Footer
+*/
+
+.landing-footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #333;
+  background: black;
+  height: 20rem;
+  padding: 1rem 2rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+#download-panel {
+  position: absolute;
+  /*background: red;*/
+  top: 6rem;
+  right: 5rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+#download-panel p {
+  margin-bottom: 1.5rem;
+}
+
+.market {
+  width: 12.07rem;
+  height: 4rem;
+  background: black;
+  display: inline-block;
+  border: .1rem solid white;
+  border-radius: .5rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dp-ios {
+  background-image: url(images/applestore.png);
+}
+
+#dp-gplay {
+  background-image: url(images/googleplay.png);
+}
+
+#dp-fos {
+  background-image: url(images/marketplace.png);
+}
