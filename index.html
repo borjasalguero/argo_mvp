@@ -7,21 +7,41 @@
     <script type="text/javascript" src="js/facebook_helper.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script id="offer-template" type="text/x-handlebars-template">
-      <p>
-        {{message}}
-      </p>
+      <span class="offer-photo">
+        <img src="{{photo}}">
+      </span>
+      <span class="offer-text">
+        {{title}}
+      </span>
     </script>
+
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="style/argo.css">
   </head>
   <body>
-    <header>Argo MVP</header>
-    <section>
+    <header>Mercadillo Vespa</header>
+    <section id="provisional-buttons">
       <button id="fb-login-button">Login</button>
-      <button id="refresh-button">Retrieve offers! & refresh!</button>
+      <button id="refresh-button">Refresh offers</button>
     </section>
     <ol id="offers-list">
-      Aqui van los posts
+      <!-- <li>
+        <span class="offer-photo">
+          <img src="">
+        </span>
+        <span class="offer-text">
+          bla bla
+        </span>
+      </li>
+      <li>
+        <span class="offer-photo">
+
+        </span>
+        <span class="offer-text">
+          bla bla
+        </span>
+      </li> -->
     </ol>
   </body>
 </html>

@@ -26,7 +26,7 @@ debug && console.log('UI Loaded');
       offers.forEach(function(offer) {
         console.log('Creando elemento')
         var offerDOM = document.createElement('li');
-        var html = _templates.offer({message: offer.message});
+        var html = _templates.offer({title: offer.message, photo: offer.photos[0] || ''});
         console.log('El elemento tiene ' + html);
         offerDOM.innerHTML = html;
         console.log('El elemento es ' + html);
