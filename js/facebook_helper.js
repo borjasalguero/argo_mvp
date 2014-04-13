@@ -1,3 +1,5 @@
+'use strict';
+
 var debug = true;
 debug && console.log('FB Helper loaded');
 

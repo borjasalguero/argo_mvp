@@ -6,6 +6,7 @@ window.onload = function() {
   var fbLoginButton = document.getElementById('fb-login-button');
   var refreshButton = document.getElementById('refresh-button');
   refreshButton.disabled = true;
+  UI.init();
   // Init FB
   FBHelper.init(
     function onLoggedIn() {
@@ -24,7 +25,7 @@ window.onload = function() {
     'click',
     function() {
       FBHelper.requestOffers(function(offers) {
-        console.log('Las ofertas son ' + JSON.stringify(offers));
+        UI.renderOffers(offers, true);
       });
     }
   );
